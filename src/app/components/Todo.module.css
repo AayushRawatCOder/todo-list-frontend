@@ -1,0 +1,161 @@
+/* Todo.module.css */
+
+/* Scoped styles for the Todo component */
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #ff6347;
+  }
+  
+  .input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #87cefa;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    margin-bottom: 20px; /* Optional: to add some space below the buttons */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px; /* Optional: for spacing between the buttons */
+    cursor: pointer;
+    background-color: #4CAF50; /* You can customize the background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Optional: for hover effect */
+  }
+  
+  .listItem {
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #fafad2;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .listItem:nth-child(even) {
+    background-color: #ffe4b5;
+  }
+  
+  .button.edit {
+    background-color: #ffb347;
+  }
+  
+  .button.delete {
+    background-color: #ff6347;
+  }
+  
+  .button.update {
+    background-color: #32cd32;
+  }
+  
+  .button.edit:hover {
+    background-color: #ff8c00;
+  }
+  
+  .button.delete:hover {
+    background-color: #e60000;
+  }
+  
+  .button.update:hover {
+    background-color: #228b22;
+  }
+  .todoContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .tasksContainer {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .listItem {
+    margin-bottom: 5px;
+  }
+  .completedTask {
+    text-decoration: line-through;
+    color: gray;
+  }
+  /* ✅ FLEX WRAPPER TO ALIGN TASK SECTIONS HORIZONTALLY */
+/* ✅ FLEX WRAPPER TO ALIGN TASK SECTIONS */
+.tasksWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ✅ STYLE FOR EACH TASK SECTION */
+.tasksContainer {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* ✅ STYLE FOR COMPLETED TASKS */
+.tasksContainer:first-child {
+  order: 1; /* Left side */
+}
+
+/* ✅ STYLE FOR TODAY'S TASKS */
+.tasksContainer:nth-child(2) {
+  order: 2; /* Center */
+}
+
+/* ✅ STYLE FOR TOMORROW'S TASKS */
+.tasksContainer:nth-child(3) {
+  order: 3; /* Right side */
+}
