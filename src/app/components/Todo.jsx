@@ -88,10 +88,10 @@ export const Todo = () => {
 
   <div className={styles.buttonContainer}>
     <button onClick={() => handleAddTask("Today")} className={styles.button}>
-      Add to Today's Task
+    Add to Today&#39;s Task
     </button>
     <button onClick={() => handleAddTask("Tomorrow")} className={styles.button}>
-      Add to Tomorrow's Task
+    Add to Tomorrow&#39;s Task
     </button>
   </div>
        <div className={styles.tasksWrapper}>
@@ -116,7 +116,7 @@ export const Todo = () => {
   
         {/* ✅ TODAY'S TASKS */}
         <div className={styles.tasksContainer}>
-          <h2>Today's Tasks ({today})</h2>
+        <h2>Today&#39;s Tasks ({today})</h2>
           <ul>
             {Alltodos?.Today?.map((Task, index) => (
               <li key={index} className={styles.listItem}>
@@ -164,7 +164,8 @@ export const Todo = () => {
   
         {/* ✅ TOMORROW'S TASKS */}
         <div className={styles.tasksContainer}>
-          <h2>Tomorrow's Tasks ({tomorrow})</h2>
+        <h2>Tomorrow&#39;s Tasks ({tomorrow})</h2>
+
           <ul>
             {Alltodos?.Tomorrow?.map((Task, index) => (
               <li key={index} className={styles.listItem}>
